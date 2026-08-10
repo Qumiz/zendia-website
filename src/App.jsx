@@ -225,12 +225,13 @@ function App() {
       <main id="home">
         <section className="relative overflow-hidden px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-            <Reveal className="max-w-2xl">
+            <Reveal className="max-w-3xl">
               <p className="mb-6 text-sm font-semibold uppercase tracking-[0.35em] text-brand-red">ZENDIA</p>
               <h1 className="text-4xl font-extrabold leading-tight text-brand-red sm:text-5xl lg:text-7xl">
-                Bridging Markets, Driving Growth
+                Bridging Markets,<br />
+                Driving Growth
               </h1>
-              <p className="mt-6 max-w-xl text-lg text-slate-500 sm:text-xl">
+              <p className="mt-6 max-w-xl text-sm font-semibold text-slate-700">
                 International Trading, Logistics and Forwarding Solutions
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
