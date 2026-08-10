@@ -17,6 +17,7 @@ import {
   Menu,
   X,
 } from 'lucide-react';
+import heroPort from './assets/hero-port.png';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
@@ -222,14 +223,14 @@ function App() {
       </header>
 
       <main id="home">
-        <section className="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,_rgba(177,31,45,0.12),_transparent_35%)] px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+        <section className="relative overflow-hidden px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
             <Reveal className="max-w-2xl">
               <p className="mb-6 text-sm font-semibold uppercase tracking-[0.35em] text-brand-red">ZENDIA</p>
-              <h1 className="text-4xl font-extrabold leading-tight text-slate-900 sm:text-5xl lg:text-7xl">
+              <h1 className="text-4xl font-extrabold leading-tight text-brand-red sm:text-5xl lg:text-7xl">
                 Bridging Markets, Driving Growth
               </h1>
-              <p className="mt-6 max-w-xl text-lg text-slate-600 sm:text-xl">
+              <p className="mt-6 max-w-xl text-lg text-slate-500 sm:text-xl">
                 International Trading, Logistics and Forwarding Solutions
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -244,7 +245,7 @@ function App() {
             <Reveal delay={150} className="relative">
               <div className="absolute inset-0 rounded-[2.5rem] bg-brand-red/10 blur-3xl" />
               <img
-                src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80"
+                src={heroPort}
                 alt="Global trade and logistics network"
                 className="h-[480px] w-full rounded-[2.5rem] object-cover shadow-soft"
               />
