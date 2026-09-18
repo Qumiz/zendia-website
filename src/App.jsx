@@ -65,19 +65,19 @@ const serviceCards = [
 const innovationSteps = [
   {
     title: 'Process Optimisation',
-    text: 'We constantly refine workflows, documentation and communication to shorten lead times and minimise errors.',
+    text: 'We continuously refine workflows, documentation and communication to shorten lead times, reduce errors and improve efficiency.',
   },
   {
     title: 'Smart Use of Data',
-    text: 'We rely on market and logistics data to compare routes, prices and risks and offer clients clear, fact-based options.',
+    text: 'We use market and logistics data to compare routes, costs and risks and provide clients with clear, fact-based options.',
   },
   {
     title: 'New Markets & Products',
-    text: 'We track demand trends and proactively propose new origins, product categories and formats to our clients.',
+    text: 'We monitor market trends and identify new sourcing opportunities, product categories and potential markets for our clients.',
   },
   {
     title: 'Partnership-Driven Solutions',
-    text: 'Together with clients and suppliers, we design flexible schemes that can quickly adapt as their business grows.',
+    text: 'Working closely with clients and suppliers, we develop flexible solutions that adapt to changing requirements and business growth.',
   },
 ];
 
@@ -350,7 +350,7 @@ function App() {
               <p className="text-sm font-semibold uppercase tracking-[0.35em] text-white/80">Innovation</p>
               <h2 className="mt-4 text-3xl font-bold sm:text-4xl">Practical innovation for faster, safer and smarter trade</h2>
               <p className="mt-6 text-lg leading-8 text-white/90">
-                “For us, innovation is not about buzzwords, but about finding smarter ways to move products and build partnerships. We focus on practical changes that save time, reduce risks and open new opportunities for our clients.”
+                We use practical solutions to make international trade more efficient, transparent and adaptable. By improving processes, using market and logistics data and responding quickly to changing conditions, we help our clients reduce risks, save time and identify new opportunities.
               </p>
             </Reveal>
             <div className="mt-12 relative">
