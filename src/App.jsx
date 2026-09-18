@@ -175,13 +175,6 @@ function App() {
     e.preventDefault();
     const nextErrors = validate();
     setErrors(nextErrors);
-    if (Object.keys(nextErrors).length > 0) return;
-
-    const subject = encodeURIComponent(formData.subject);
-    const body = encodeURIComponent(
-      `Name: ${formData.name}\nCompany: ${formData.company}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
-    );
-    window.location.href = `mailto:zendia2025@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -486,10 +479,6 @@ function App() {
               <p className="text-sm font-semibold uppercase tracking-[0.35em] text-brand-red">Get in touch</p>
               <h2 className="mt-4 text-3xl font-bold text-slate-900">ZENDIA Sp. z o.o.</h2>
               <p className="mt-6 text-lg leading-8 text-slate-600">Marszałkowska 55/73-39<br />00-676 Warsaw, Poland</p>
-              <div className="mt-8 space-y-3 text-lg text-slate-700">
-                <p><span className="font-semibold">Phone:</span> <a href="tel:+48666946544" className="text-brand-red hover:underline">+48 666 946 544</a></p>
-                <p><span className="font-semibold">Email:</span> <a href="mailto:zendia2025@gmail.com" className="text-brand-red hover:underline">zendia2025@gmail.com</a></p>
-              </div>
               <div className="mt-8 rounded-[1.5rem] border border-slate-200 bg-slate-50 p-6">
                 <p className="text-sm font-semibold uppercase tracking-[0.35em] text-brand-red">Location</p>
                 <p className="mt-3 text-base leading-7 text-slate-600">Warsaw-based operations with international trade and logistics support across multiple markets.</p>
@@ -545,10 +534,6 @@ function App() {
             <a href="#about" className="hover:text-brand-red">About</a>
             <a href="#services" className="hover:text-brand-red">Services</a>
             <a href="#contact" className="hover:text-brand-red">Contact</a>
-          </div>
-          <div className="text-sm text-slate-600">
-            <p>Phone: <a href="tel:+48666946544" className="text-brand-red hover:underline">+48 666 946 544</a></p>
-            <p>Email: <a href="mailto:zendia2025@gmail.com" className="text-brand-red hover:underline">zendia2025@gmail.com</a></p>
           </div>
         </div>
         <div className="mx-auto mt-8 flex max-w-7xl flex-col-reverse gap-4 border-t border-slate-300 pt-6 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
