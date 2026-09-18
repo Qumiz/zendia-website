@@ -381,28 +381,28 @@ function App() {
           <div className="mx-auto max-w-7xl rounded-[2.5rem] bg-brand-red p-8 text-white shadow-soft lg:p-12">
             <Reveal className="max-w-3xl">
               <p className="text-sm font-semibold uppercase tracking-[0.35em] text-white/80">Solutions</p>
-              <h2 className="mt-4 text-3xl font-bold sm:text-4xl">Tailored solutions for every role in the supply chain</h2>
+              <h2 className="mt-4 text-3xl font-bold sm:text-4xl">Tailored solutions for international trade</h2>
               <p className="mt-6 text-lg leading-8 text-white/90">
-                “We don’t offer one-size-fits-all packages. We design practical solutions around each partner’s role, market and volumes, so every project is realistic, efficient and scalable.”
+                We develop practical solutions around each partner’s market, product requirements and business objectives, combining sourcing, commercial coordination and logistics into one efficient process.
               </p>
             </Reveal>
             <div className="mt-12 grid gap-8 lg:grid-cols-2">
               <Reveal className="rounded-[1.5rem] border border-white/20 bg-white/10 p-8">
                 <h3 className="text-2xl font-semibold">For buyers & distributors</h3>
                 <ul className="mt-6 space-y-4 text-sm leading-7 text-white/90">
-                  <li>• Secure and diversify supply sources across Europe, CIS countries, China, India and Southeast Asia</li>
-                  <li>• Expand assortment without building an internal sourcing and logistics team</li>
-                  <li>• Consolidate shipments and optimise routes to improve landed cost</li>
-                  <li>• Receive clear and transparent communication at every stage of the deal</li>
+                  <li>• Diversify supply sources across Europe, CIS countries, China, India and Southeast Asia</li>
+                  <li>• Expand product assortments without building an internal sourcing and logistics team</li>
+                  <li>• Consolidate shipments and optimise routes to improve landed costs</li>
+                  <li>• Maintain clear and transparent coordination at every stage of the transaction</li>
                 </ul>
               </Reveal>
               <Reveal delay={150} className="rounded-[1.5rem] border border-white/20 bg-white/10 p-8">
                 <h3 className="text-2xl font-semibold">For producers & brands</h3>
                 <ul className="mt-6 space-y-4 text-sm leading-7 text-white/90">
-                  <li>• Access new buyers and markets through a trusted local and international partner</li>
-                  <li>• Test new products, formats and price points with lower entry risk</li>
-                  <li>• Receive market feedback to adjust assortment and positioning</li>
-                  <li>• Outsource part of the commercial and logistics complexity to an experienced team</li>
+                  <li>• Access new buyers and international markets through an experienced trade partner</li>
+                  <li>• Test new products, formats and price points while reducing market-entry risks</li>
+                  <li>• Receive market feedback to refine assortment and positioning</li>
+                  <li>• Rely on Zendia for commercial coordination and logistics throughout the entire process</li>
                 </ul>
               </Reveal>
             </div>
