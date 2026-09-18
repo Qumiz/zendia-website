@@ -6,14 +6,13 @@ import {
   Compass,
   Globe2,
   Handshake,
-  Leaf,
   Link2,
   Package,
   ShieldCheck,
   ShipWheel,
   Truck,
   Boxes,
-  CircleDollarSign,
+  Shuffle,
   Menu,
   X,
 } from 'lucide-react';
@@ -83,10 +82,10 @@ const innovationSteps = [
 ];
 
 const performanceCards = [
-  { title: 'Diversified markets', icon: Compass },
-  { title: 'Risk management', icon: ShieldCheck },
-  { title: 'Sustainable growth', icon: Leaf },
-  { title: 'Long-term project support', icon: CircleDollarSign },
+  { title: 'Market Diversity', icon: Compass },
+  { title: 'Risk Management', icon: ShieldCheck },
+  { title: 'Business Flexibility', icon: Shuffle },
+  { title: 'Long-Term Partnerships', icon: Handshake },
 ];
 
 const visionPoints = [
@@ -432,10 +431,10 @@ function App() {
         <section className="px-4 py-16 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl rounded-[2.5rem] border border-slate-200 bg-white p-8 shadow-soft lg:p-12">
             <Reveal className="max-w-3xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.35em] text-brand-red">Financial performance</p>
-              <h2 className="mt-4 text-3xl font-bold text-slate-900 sm:text-4xl">Steady, sustainable growth with careful risk management</h2>
+              <p className="text-sm font-semibold uppercase tracking-[0.35em] text-brand-red">Business approach</p>
+              <h2 className="mt-4 text-3xl font-bold text-slate-900 sm:text-4xl">Built for stable, long-term cooperation</h2>
               <p className="mt-6 text-lg leading-8 text-slate-600">
-                “We focus on steady, sustainable growth. By working in different markets and product categories and carefully managing risks, we keep our business financially stable and able to support long-term projects with our partners.”
+                We build our business around a diverse range of markets, careful risk management and long-term partnerships. This approach helps us remain flexible, respond to changing market conditions and support our partners as their business needs evolve.
               </p>
             </Reveal>
             <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
