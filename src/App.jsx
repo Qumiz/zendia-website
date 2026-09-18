@@ -423,7 +423,7 @@ function App() {
               <p className="text-sm font-semibold uppercase tracking-[0.35em] text-brand-red">Health, safety and environmental commitment</p>
               <h2 className="mt-4 text-3xl font-bold text-slate-900 sm:text-4xl">Responsible trade, handled with care</h2>
               <p className="mt-6 text-lg leading-8 text-slate-600">
-                “We treat health, safety and environmental impact as an integral part of every decision, not a checkbox. By working with compliant partners, maintaining safe handling and storage practices, and optimising our logistics, we aim to move goods responsibly while protecting people, products and the planet.”
+                We consider health, safety and environmental responsibility in the way we organise our operations. We work with reliable partners, follow appropriate handling and storage requirements, and seek efficient logistics solutions that help reduce unnecessary risks and resource use.
               </p>
             </Reveal>
           </div>
