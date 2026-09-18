@@ -457,9 +457,9 @@ function App() {
           <div className="mx-auto grid max-w-7xl gap-10 rounded-[2.5rem] bg-slate-900 p-8 text-white shadow-soft lg:grid-cols-[1.1fr_0.9fr] lg:p-12">
             <Reveal>
               <p className="text-sm font-semibold uppercase tracking-[0.35em] text-brand-red">Contact</p>
-              <h2 className="mt-4 text-3xl font-bold sm:text-4xl">Build reliable supply solutions with ZENDIA</h2>
+              <h2 className="mt-4 text-3xl font-bold sm:text-4xl">Let’s build new opportunities together</h2>
               <p className="mt-6 text-lg leading-8 text-slate-300">
-                Connect with us to explore new markets, supply routes and cooperation formats for your business.
+                Connect with ZENDIA to discuss your sourcing, trading and logistics needs and explore opportunities for long-term cooperation.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a href="#contact" className="inline-flex items-center justify-center rounded-full bg-brand-red px-6 py-3 font-semibold text-white transition hover:bg-[#9b1827]">
