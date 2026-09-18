@@ -32,32 +32,32 @@ const navLinks = [
 const serviceCards = [
   {
     title: 'International Trading',
-    description: 'Connecting producers and buyers across international markets with a clear commercial approach.',
+    description: 'Connecting manufacturers, suppliers and buyers across international markets while building reliable and transparent business partnerships.',
     icon: Globe2,
   },
   {
     title: 'Import & Export',
-    description: 'Supporting trade flows with careful coordination and a practical understanding of each market.',
+    description: 'Managing import and export operations with practical market knowledge, regulatory awareness and efficient coordination.',
     icon: ShipWheel,
   },
   {
     title: 'Logistics & Forwarding',
-    description: 'Providing freight forwarding and door-to-door logistics with flexible execution.',
+    description: 'Delivering reliable freight forwarding and door-to-door logistics through trusted transport partners and efficient coordination.',
     icon: Truck,
   },
   {
     title: 'Supplier & Product Sourcing',
-    description: 'Helping clients identify suitable suppliers and products with a strong sourcing network.',
+    description: 'Identifying reliable suppliers and suitable products that match our clients’ commercial and operational requirements.',
     icon: Package,
   },
   {
     title: 'Private Label Support',
-    description: 'Assisting with product selection, assortment planning and commercial coordination.',
+    description: 'Supporting private label projects from product selection and supplier sourcing to commercial coordination and market launch.',
     icon: Boxes,
   },
   {
     title: 'End-to-End Deal Management',
-    description: 'Managing the full cycle from sourcing to delivery and deal coordination.',
+    description: 'Managing every stage of the transaction—from supplier selection and negotiations to logistics, documentation and final delivery.',
     icon: Handshake,
   },
 ];
@@ -319,7 +319,7 @@ function App() {
               <p className="text-sm font-semibold uppercase tracking-[0.35em] text-brand-red">What we do</p>
               <h2 className="mt-4 text-3xl font-bold text-slate-900 sm:text-4xl">Services built around efficient and safe cross-border trade</h2>
               <p className="mt-6 text-lg leading-8 text-slate-600">
-                “We help our partners move products across borders efficiently and safely. From sourcing and negotiating with suppliers to logistics and door-to-door delivery, we manage the entire process so our clients can focus on their business, not on operational complexity.”
+                We help companies develop international trade by connecting reliable suppliers, coordinating cross-border transactions and managing logistics from sourcing to final delivery. Our clients stay focused on growing their business while we take care of the operational complexity.
               </p>
             </Reveal>
             <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
