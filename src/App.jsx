@@ -18,6 +18,7 @@ import {
   X,
 } from 'lucide-react';
 import heroPort from './assets/hero-port.png';
+import sustainabilityForest from './assets/sustainability-forest.png';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
@@ -413,8 +414,8 @@ function App() {
           <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[0.95fr_1.05fr]">
             <Reveal className="order-2 lg:order-1">
               <img
-                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
-                alt="Sustainable logistics and environmental responsibility"
+                src={sustainabilityForest}
+                alt="Ancient forest lit by morning sun"
                 className="h-[420px] w-full rounded-[2rem] object-cover shadow-soft"
               />
             </Reveal>
