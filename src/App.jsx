@@ -18,7 +18,7 @@ import {
   X,
 } from 'lucide-react';
 import heroPort from './assets/hero-port.png';
-import sustainabilityForest from './assets/sustainability-forest.png';
+import sustainabilityForest from './assets/sustainability-forest.jpg';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
