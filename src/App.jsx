@@ -19,6 +19,8 @@ import {
 import heroPort from './assets/hero-port.png';
 import sustainabilityForest from './assets/sustainability-forest.jpg';
 
+const CONTACT_RECIPIENTS = 'ZENDIA.office@gmail.com,zendia2025@gmail.com';
+
 const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
@@ -148,6 +150,7 @@ function App() {
     message: '',
   });
   const [errors, setErrors] = useState({});
+  const [status, setStatus] = useState('idle');
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -175,6 +178,14 @@ function App() {
     e.preventDefault();
     const nextErrors = validate();
     setErrors(nextErrors);
+    if (Object.keys(nextErrors).length > 0) return;
+
+    const subject = encodeURIComponent(`ZENDIA website enquiry: ${formData.subject}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nCompany: ${formData.company}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
+    );
+    window.location.href = `mailto:${CONTACT_RECIPIENTS}?subject=${subject}&body=${body}`;
+    setStatus('opened');
   };
 
   return (
@@ -519,6 +530,11 @@ function App() {
               <button type="submit" className="mt-6 inline-flex items-center rounded-full bg-brand-red px-6 py-3 font-semibold text-white transition hover:bg-[#9b1827]">
                 Send Message <ArrowRight className="ml-2 h-4 w-4" />
               </button>
+              {status === 'opened' && (
+                <p role="status" className="mt-4 text-sm font-semibold text-slate-600">
+                  Your email app should now open with this message ready to send. Press send there to deliver it.
+                </p>
+              )}
             </Reveal>
           </div>
         </section>
