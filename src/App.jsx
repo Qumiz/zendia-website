@@ -19,8 +19,6 @@ import {
 import heroPort from './assets/hero-port.png';
 import sustainabilityForest from './assets/sustainability-forest.jpg';
 
-const CONTACT_RECIPIENTS = 'ZENDIA.office@gmail.com,zendia2025@gmail.com';
-
 const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
@@ -148,6 +146,7 @@ function App() {
     phone: '',
     subject: '',
     message: '',
+    website: '',
   });
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState('idle');
@@ -174,18 +173,25 @@ function App() {
     return nextErrors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const nextErrors = validate();
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length > 0) return;
 
-    const subject = encodeURIComponent(`ZENDIA website enquiry: ${formData.subject}`);
-    const body = encodeURIComponent(
-      `Name: ${formData.name}\nCompany: ${formData.company}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
-    );
-    window.location.href = `mailto:${CONTACT_RECIPIENTS}?subject=${subject}&body=${body}`;
-    setStatus('opened');
+    setStatus('sending');
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      if (!response.ok) throw new Error('Request failed');
+      setStatus('success');
+      setFormData({ name: '', company: '', email: '', phone: '', subject: '', message: '', website: '' });
+    } catch {
+      setStatus('error');
+    }
   };
 
   return (
@@ -527,12 +533,26 @@ function App() {
                   {errors.message && <p className="mt-2 text-sm text-brand-red">{errors.message}</p>}
                 </div>
               </div>
-              <button type="submit" className="mt-6 inline-flex items-center rounded-full bg-brand-red px-6 py-3 font-semibold text-white transition hover:bg-[#9b1827]">
-                Send Message <ArrowRight className="ml-2 h-4 w-4" />
+              <div className="hidden" aria-hidden="true">
+                <label htmlFor="website">Website</label>
+                <input id="website" name="website" value={formData.website} onChange={handleChange} tabIndex={-1} autoComplete="off" />
+              </div>
+              <button
+                type="submit"
+                disabled={status === 'sending'}
+                className="mt-6 inline-flex items-center rounded-full bg-brand-red px-6 py-3 font-semibold text-white transition hover:bg-[#9b1827] disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                {status === 'sending' ? 'Sending\u2026' : 'Send Message'}
+                <ArrowRight className="ml-2 h-4 w-4" />
               </button>
-              {status === 'opened' && (
-                <p role="status" className="mt-4 text-sm font-semibold text-slate-600">
-                  Your email app should now open with this message ready to send. Press send there to deliver it.
+              {status === 'success' && (
+                <p role="status" className="mt-4 text-sm font-semibold text-green-700">
+                  Thank you. Your message has been sent.
+                </p>
+              )}
+              {status === 'error' && (
+                <p role="alert" className="mt-4 text-sm font-semibold text-brand-red">
+                  Sorry, your message could not be sent. Please try again in a moment.
                 </p>
               )}
             </Reveal>
